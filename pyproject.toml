@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telescope_gym"
+version = "0.1.0"
+description = "A flexible Gymnasium environment for telescope adaptive optics reinforcement learning"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Ian Cunnyngham"},
+]
+dependencies = [
+    "gymnasium>=0.26",
+    "numpy",
+    "matplotlib",
+    "hcipy",
+    "scipy",
+    "joblib",
+]
+
+[project.optional-dependencies]
+examples = [
+    "torch",
+    "tyro",
+    "tensorboard",
+]
+dev = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+include = ["telescope_gym*"]
