@@ -1,4 +1,4 @@
-# telescope_gym
+# TelescopeGym
 
 A [Gymnasium](https://gymnasium.farama.org) environment for training reinforcement learning agents to control telescope adaptive optics, built on [HCIPy](https://hcipy.org).
 
